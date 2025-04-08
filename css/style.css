@@ -213,7 +213,7 @@
     left: 0;
     display: flex;
     align-items: center;
-    background: rgba(0, 0, 0, .1);
+    background: rgba(182, 20, 20, 0.1);
 }
 
 @media (max-width: 768px) {
@@ -231,6 +231,7 @@
 
     .header-carousel .owl-carousel-item p {
         font-size: 16px !important;
+        background-color: red;
     }
 }
 
@@ -251,8 +252,8 @@
     width: 45px;
     height: 45px;
     margin: 5px 0;
-    background: #FFFFFF;
-    box-shadow: 0 0 30px rgba(255, 255, 255, .9);
+    background: #c90303;
+    box-shadow: 0 0 30px rgba(165, 15, 15, 0.9);
     border-radius: 45px;
     transition: .5s;
 }
@@ -273,7 +274,7 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(175, 18, 18, 0.1), rgba(0, 0, 0, .1)), url(../img/carousel-1.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -635,3 +636,111 @@
 .footer .copyright a:hover {
     color: var(--primary);
 }
+
+
+.scrolling-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  .scrolling-logos {
+    display: flex;
+    gap: 2rem;
+    animation: scroll-left 30s linear infinite;
+    will-change: transform;
+  }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .scrolling-logos img {
+    max-height: 60px;
+    object-fit: contain;
+    filter: grayscale(100%);
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .services-section {
+    background: linear-gradient(135deg, #be4229, #6f7071);
+    color: #ffffff;
+  }
+
+  .services-section h6,
+  .services-section h1,
+  .services-section h4,
+  .services-section p,
+  .services-section li {
+    color: #ffffff;
+  }
+
+  .service-item {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeUp 1s ease forwards;
+  }
+
+  .service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  .service-icon i {
+    color: #00bfff;
+  }
+
+  .service-item ul {
+    list-style: disc;
+    padding-left: 1.2rem;
+  }
+
+  @keyframes fadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .product-img {
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+  }
+
+  .card-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+    color: #555;
+  }
+
+  .card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: scale(1.02);
+  }

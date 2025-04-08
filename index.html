@@ -40,7 +40,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body style="background-color: gray;">
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -99,7 +99,16 @@
                         <a href="service.html" class="dropdown-item">Managed IT Services</a>
                     </div>
                 </div>
-                <a href="project.html" class="nav-item nav-link">Product</a>
+                <div class="nav-item dropdown">
+                    <a href="project.html" class="nav-link dropdown-toggle" >Product</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="PowerSolutions.html" class="dropdown-item">Power Solution</a>
+                        <a href="access-products.html" class="dropdown-item">Access product</a>
+                        <a href="infrastructure-products.html" class="dropdown-item">infrastructure product</a>
+                        <a href="security-products.html" class="dropdown-item">Security Product</a>
+                        <a href="hvac-products.html" class="dropdown-item">hvac products</a>
+                    </div>
+                </div>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu bg-light m-0">
@@ -128,7 +137,7 @@
                 </div>
                 <div class="owl-carousel-inner position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
                     <div class="container">
-                        <div class="row justify-content-start">
+                        <div style="background-color: gray;" class="row justify-content-start">
                             <div class="col-lg-8">
                                 <h1 class="display-2 text-white animated slideInDown">Empowering Connectivity with Smart Solutions</h1>
                                 <p class="fs-5 fw-medium text-white mb-4 pb-3">Smart Power Enterprise plays a pivotal role in enabling customers to deliver dynamic video, voice, data, and wireless services — critical to both businesses and consumers worldwide.</p>
@@ -147,7 +156,7 @@
                 </div>
                 <div class="owl-carousel-inner position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
                     <div class="container">
-                        <div class="row justify-content-start">
+                        <div style="background-color: gray;" class="row justify-content-start">
                             <div class="col-lg-8">
                                 <h1 class="display-2 text-white animated slideInDown">Innovative Fiber & Wireless Solutions</h1>
                                 <p class="fs-5 fw-medium text-white mb-4 pb-3">We provide cutting-edge fiber connectivity and wireless capabilities supporting a wide range of network applications—empowering our clients to meet growing demands for bandwidth.</p>
@@ -166,7 +175,7 @@
                 </div>
                 <div class="owl-carousel-inner position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
                     <div class="container">
-                        <div class="row justify-content-start">
+                        <div style="background-color: gray;" class="row justify-content-start">
                             <div class="col-lg-8">
                                 <h1 class="display-2 text-white animated slideInDown">Your Gateway to Smart Technology Solutions</h1>
                                 <p class="fs-5 fw-medium text-white mb-4 pb-3">From data centers to software solutions, we offer real, result-oriented services that help customers solve problems and achieve growth through creativity, intelligence, and innovation.</p>
@@ -263,120 +272,121 @@
 
 
     <!-- Service Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5 services-section">
         <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h6 class="text-primary">Our Services</h6>
-                <h1 class="mb-4">Empowering Businesses Through Smart Technology Solutions</h1>
+          <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h6 class="text-primary">Our Services</h6>
+            <h1 class="mb-4">Empowering Businesses Through Smart Technology Solutions</h1>
+          </div>
+          <div class="row g-4">
+            <!-- Networking Services -->
+            <div class="col-md-6 col-lg-4" style="animation-delay: 0.1s;">
+              <div class="service-item p-3 h-100">
+                <img class="img-fluid w-100 rounded mb-3" src="img/img-600x400-1.jpg" alt="Networking Services">
+                <div class="p-2">
+                  <div class="service-icon mb-3">
+                    <i class="fa fa-network-wired fa-3x"></i>
+                  </div>
+                  <h4 class="mb-3">Networking Services</h4>
+                  <p>Robust, high-speed connectivity solutions tailored to your operations.</p>
+                  <ul>
+                    <li>Structured Cabling</li>
+                    <li>Switching & Routing</li>
+                    <li>Wireless Networks</li>
+                    <li>Electrical Infrastructure</li>
+                  </ul>
+                  <a class="small fw-medium text-primary" href="#">Read More <i class="fa fa-arrow-right ms-2"></i></a>
+                </div>
+              </div>
             </div>
-            <div class="row g-4">
-                <!-- Service Item -->
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item rounded overflow-hidden shadow-sm h-100">
-                        <img class="img-fluid w-100" src="img/img-600x400-1.jpg" alt="Networking Services">
-                        <div class="position-relative p-4">
-                            <div class="service-icon mb-3">
-                                <i class="fa fa-network-wired fa-3x text-primary"></i>
-                            </div>
-                            <h4 class="mb-3">Networking Services</h4>
-                            <p>Robust, high-speed connectivity solutions tailored to your operations.</p>
-                            <ul class="mb-3 ps-3">
-                                <li>Structured Cabling</li>
-                                <li>Switching & Routing</li>
-                                <li>Wireless Networks</li>
-                                <li>Electrical Infrastructure</li>
-                            </ul>
-                            <a class="small fw-medium text-primary" href="#">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
+      
+            <!-- Hardware Support -->
+            <div class="col-md-6 col-lg-4" style="animation-delay: 0.2s;">
+              <div class="service-item p-3 h-100">
+                <img class="img-fluid w-100 rounded mb-3" src="img/img-600x400-2.jpg" alt="Hardware Support">
+                <div class="p-2">
+                  <div class="service-icon mb-3">
+                    <i class="fa fa-tools fa-3x"></i>
+                  </div>
+                  <h4 class="mb-3">Hardware Support</h4>
+                  <p>Maintenance and repairs for all your IT equipment, big or small.</p>
+                  <ul>
+                    <li>Desktop/Laptop Support</li>
+                    <li>Server Rack Installations</li>
+                    <li>UPS, Stabilizer & Inverter</li>
+                    <li>Electronic Equipment Services</li>
+                  </ul>
+                  <a class="small fw-medium text-primary" href="#">Read More <i class="fa fa-arrow-right ms-2"></i></a>
                 </div>
-    
-                <!-- Service Item -->
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item rounded overflow-hidden shadow-sm h-100">
-                        <img class="img-fluid w-100" src="img/img-600x400-2.jpg" alt="Hardware Support">
-                        <div class="position-relative p-4">
-                            <div class="service-icon mb-3">
-                                <i class="fa fa-tools fa-3x text-primary"></i>
-                            </div>
-                            <h4 class="mb-3">Hardware Support</h4>
-                            <p>Maintenance and repairs for all your IT equipment, big or small.</p>
-                            <ul class="mb-3 ps-3">
-                                <li>Desktop/Laptop Support</li>
-                                <li>Server Rack Installations</li>
-                                <li>UPS, Stabilizer & Inverter</li>
-                                <li>Electronic Equipment Services</li>
-                            </ul>
-                            <a class="small fw-medium text-primary" href="#">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Service Item -->
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item rounded overflow-hidden shadow-sm h-100">
-                        <img class="img-fluid w-100" src="img/img-600x400-3.jpg" alt="Data & Software Support">
-                        <div class="position-relative p-4">
-                            <div class="service-icon mb-3">
-                                <i class="fa fa-database fa-3x text-primary"></i>
-                            </div>
-                            <h4 class="mb-3">Data & Software Support</h4>
-                            <p>Ensure smooth operations with secure and optimized data systems.</p>
-                            <ul class="mb-3 ps-3">
-                                <li>Data Recovery & Backup</li>
-                                <li>Software Installations</li>
-                                <li>System Upgrades</li>
-                                <li>Virus & Malware Removal</li>
-                            </ul>
-                            <a class="small fw-medium text-primary" href="#">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Service Item -->
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item rounded overflow-hidden shadow-sm h-100">
-                        <img class="img-fluid w-100" src="img/img-600x400-5.jpg" alt="Security Solutions">
-                        <div class="position-relative p-4">
-                            <div class="service-icon mb-3">
-                                <i class="fa fa-shield-alt fa-3x text-primary"></i>
-                            </div>
-                            <h4 class="mb-3">Security Solutions</h4>
-                            <p>Secure your digital and physical assets with integrated technologies.</p>
-                            <ul class="mb-3 ps-3">
-                                <li>Firewalls & Antivirus</li>
-                                <li>CCTV & Surveillance</li>
-                                <li>Biometric Devices</li>
-                                <li>EM Lock & Door Access</li>
-                            </ul>
-                            <a class="small fw-medium text-primary" href="#">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Service Item -->
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item rounded overflow-hidden shadow-sm h-100">
-                        <img class="img-fluid w-100" src="img/img-600x400-4.jpg" alt="Managed IT Services">
-                        <div class="position-relative p-4">
-                            <div class="service-icon mb-3">
-                                <i class="fa fa-cogs fa-3x text-primary"></i>
-                            </div>
-                            <h4 class="mb-3">Managed IT Services</h4>
-                            <p>End-to-end IT management designed for efficiency and scalability.</p>
-                            <ul class="mb-3 ps-3">
-                                <li>Annual Maintenance Contracts</li>
-                                <li>Facility Management</li>
-                                <li>Managed Print Services</li>
-                                <li>Global Vendor Support</li>
-                            </ul>
-                            <a class="small fw-medium text-primary" href="#">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+      
+            <!-- Data & Software Support -->
+            <div class="col-md-6 col-lg-4" style="animation-delay: 0.3s;">
+              <div class="service-item p-3 h-100">
+                <img class="img-fluid w-100 rounded mb-3" src="img/img-600x400-3.jpg" alt="Data & Software Support">
+                <div class="p-2">
+                  <div class="service-icon mb-3">
+                    <i class="fa fa-database fa-3x"></i>
+                  </div>
+                  <h4 class="mb-3">Data & Software Support</h4>
+                  <p>Ensure smooth operations with secure and optimized data systems.</p>
+                  <ul>
+                    <li>Data Recovery & Backup</li>
+                    <li>Software Installations</li>
+                    <li>System Upgrades</li>
+                    <li>Virus & Malware Removal</li>
+                  </ul>
+                  <a class="small fw-medium text-primary" href="#">Read More <i class="fa fa-arrow-right ms-2"></i></a>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Security Solutions -->
+            <div class="col-md-6 col-lg-4" style="animation-delay: 0.4s;">
+              <div class="service-item p-3 h-100">
+                <img class="img-fluid w-100 rounded mb-3" src="img/img-600x400-5.jpg" alt="Security Solutions">
+                <div class="p-2">
+                  <div class="service-icon mb-3">
+                    <i class="fa fa-shield-alt fa-3x"></i>
+                  </div>
+                  <h4 class="mb-3">Security Solutions</h4>
+                  <p>Secure your digital and physical assets with integrated technologies.</p>
+                  <ul>
+                    <li>Firewalls & Antivirus</li>
+                    <li>CCTV & Surveillance</li>
+                    <li>Biometric Devices</li>
+                    <li>EM Lock & Door Access</li>
+                  </ul>
+                  <a class="small fw-medium text-primary" href="#">Read More <i class="fa fa-arrow-right ms-2"></i></a>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Managed IT Services -->
+            <div class="col-md-6 col-lg-4" style="animation-delay: 0.5s;">
+              <div class="service-item p-3 h-100">
+                <img class="img-fluid w-100 rounded mb-3" src="img/img-600x400-4.jpg" alt="Managed IT Services">
+                <div class="p-2">
+                  <div class="service-icon mb-3">
+                    <i class="fa fa-cogs fa-3x"></i>
+                  </div>
+                  <h4 class="mb-3">Managed IT Services</h4>
+                  <p>End-to-end IT management designed for efficiency and scalability.</p>
+                  <ul>
+                    <li>Annual Maintenance Contracts</li>
+                    <li>Facility Management</li>
+                    <li>Managed Print Services</li>
+                    <li>Global Vendor Support</li>
+                  </ul>
+                  <a class="small fw-medium text-primary" href="#">Read More <i class="fa fa-arrow-right ms-2"></i></a>
+                </div>
+              </div>
+            </div>
+      
+          </div>
         </div>
-    </div>
+      </div>
     
     
     <!-- Service End -->
@@ -452,9 +462,9 @@
 
 
     <!-- Projects Start -->
-    <section class="py-5 bg-light">
+    <section class="py-5" style="background: linear-gradient(135deg, #d21e1e, #9d9999);">
         <div class="container">
-          <div class="text-center mb-5 section-title">
+          <div class="text-center mb-5">
             <h6 class="text-primary text-uppercase">Our Products</h6>
             <h1 class="fw-bold">Explore Our Power, Security & IT Infrastructure Solutions</h1>
             <p class="text-muted">Delivering cutting-edge technology in Power, Security, Access Control, Infrastructure, and HVAC.</p>
@@ -462,116 +472,65 @@
       
           <div class="row g-4">
       
-            <!-- Product Card -->
-            <!-- CATEGORY: Power Solutions -->
+            <!-- Power Solutions -->
             <div class="col-lg-4 col-md-6">
-              <div class="product-card bg-white shadow-sm h-100">
-                <div class="position-relative product-image-container">
-                  <img src="img/product1.png" class="product-image" alt="Power Solutions"/>
-                  <div class="image-overlay">
-                    <a href="img/product1.png" data-lightbox="power" class="overlay-btn"><i class="fa fa-eye"></i></a>
-                    <!-- Hidden Gallery Items -->
-                    <a href="img/product2.png" class="d-none" data-lightbox="power"></a>
-                    <a href="img/product3.png" class="d-none" data-lightbox="power"></a>
-                    <a href="img/product4.png" class="d-none" data-lightbox="power"></a>
-                    <a href="img/product5.png" class="d-none" data-lightbox="power"></a>
-                  </div>
-                </div>
-                <div class="p-4 text-center">
-                  <h6 class="text-primary fw-semibold mb-1">Power Solutions</h6>
-                  <h5 class="mb-1">UPS, Inverters, Stabilizers</h5>
-                  <p class="text-muted small mb-0">Including Batteries & Solar Panel Systems</p>
-                </div>
+              <div class="bg-white shadow-sm rounded overflow-hidden h-100 text-center p-4">
+                <img src="img/product1.png" alt="Power Solutions" class="img-fluid mb-3" />
+                <h6 class="text-primary fw-semibold">Power Solutions</h6>
+                <h5>UPS, Inverters, Stabilizers</h5>
+                <p class="text-muted small">Including Batteries & Solar Panel Systems</p>
+                <a href="PowerSolutions.html" class="btn btn-outline-primary mt-2">View Products</a>
               </div>
             </div>
       
-            <!-- CATEGORY: Security Systems -->
+            <!-- Security Systems -->
             <div class="col-lg-4 col-md-6">
-              <div class="product-card bg-white shadow-sm h-100">
-                <div class="position-relative product-image-container">
-                  <img src="img/security1.png" class="product-image" alt="Security Systems"/>
-                  <div class="image-overlay">
-                    <a href="img/security1.png" data-lightbox="security" class="overlay-btn"><i class="fa fa-eye"></i></a>
-                    <a href="img/security2.png" class="d-none" data-lightbox="security"></a>
-                    <a href="img/security3.png" class="d-none" data-lightbox="security"></a>
-                    <a href="img/security4.png" class="d-none" data-lightbox="security"></a>
-                    <a href="img/security5.png" class="d-none" data-lightbox="security"></a>
-                  </div>
-                </div>
-                <div class="p-4 text-center">
-                  <h6 class="text-primary fw-semibold mb-1">Security Systems</h6>
-                  <h5 class="mb-1">IP & Analog Surveillance</h5>
-                  <p class="text-muted small mb-0">PTZ, Wireless, Infrared & Fisheye Cameras</p>
-                </div>
+              <div class="bg-white shadow-sm rounded overflow-hidden h-100 text-center p-4">
+                <img src="img/security1.png" alt="Security Systems" class="img-fluid mb-3" />
+                <h6 class="text-primary fw-semibold">Security Systems</h6>
+                <h5>IP & Analog Surveillance</h5>
+                <p class="text-muted small">PTZ, Wireless, Infrared & Fisheye Cameras</p>
+                <a href="security-products.html" class="btn btn-outline-primary mt-2">View Products</a>
               </div>
             </div>
       
-            <!-- CATEGORY: Access & Alarm -->
+            <!-- Access & Alarm -->
             <div class="col-lg-4 col-md-6">
-              <div class="product-card bg-white shadow-sm h-100">
-                <div class="position-relative product-image-container">
-                  <img src="img/access1.png" class="product-image" alt="Access & Alarm"/>
-                  <div class="image-overlay">
-                    <a href="img/access1.png" data-lightbox="access" class="overlay-btn"><i class="fa fa-eye"></i></a>
-                    <a href="img/access2.png" class="d-none" data-lightbox="access"></a>
-                    <a href="img/access3.png" class="d-none" data-lightbox="access"></a>
-                    <a href="img/access4.png" class="d-none" data-lightbox="access"></a>
-                    <a href="img/access5.jpg" class="d-none" data-lightbox="access"></a>
-                    <a href="img/access6.jpg" class="d-none" data-lightbox="access"></a>
-                  </div>
-                </div>
-                <div class="p-4 text-center">
-                  <h6 class="text-primary fw-semibold mb-1">Access & Alarm</h6>
-                  <h5 class="mb-1">Biometric, Door Phones, Alarms</h5>
-                  <p class="text-muted small mb-0">Secure Entry & Alert Systems</p>
-                </div>
+              <div class="bg-white shadow-sm rounded overflow-hidden h-100 text-center p-4">
+                <img src="img/access1.png" alt="Access & Alarm" class="img-fluid mb-3" />
+                <h6 class="text-primary fw-semibold">Access & Alarm</h6>
+                <h5>Biometric, Door Phones, Alarms</h5>
+                <p class="text-muted small">Secure Entry & Alert Systems</p>
+                <a href="access-products.html" class="btn btn-outline-primary mt-2">View Products</a>
               </div>
             </div>
       
-            <!-- CATEGORY: IT Infrastructure -->
+            <!-- IT Infrastructure -->
             <div class="col-lg-4 col-md-6">
-              <div class="product-card bg-white shadow-sm h-100">
-                <div class="position-relative product-image-container">
-                  <img src="img/network.png" class="product-image" alt="IT Infrastructure"/>
-                  <div class="image-overlay">
-                    <a href="img/network.png" data-lightbox="infrastructure" class="overlay-btn"><i class="fa fa-eye"></i></a>
-                    <a href="img/network1.png" class="d-none" data-lightbox="infrastructure"></a>
-                    <a href="img/network2.jpg" class="d-none" data-lightbox="infrastructure"></a>
-                    <a href="img/network3.jpg" class="d-none" data-lightbox="infrastructure"></a>
-                  </div>
-                </div>
-                <div class="p-4 text-center">
-                  <h6 class="text-primary fw-semibold mb-1">IT & Electrical</h6>
-                  <h5 class="mb-1">Server Racks & Firewalls</h5>
-                  <p class="text-muted small mb-0">Electrical Setup & Security Hardware</p>
-                </div>
+              <div class="bg-white shadow-sm rounded overflow-hidden h-100 text-center p-4">
+                <img src="img/network.png" alt="IT Infrastructure" class="img-fluid mb-3" />
+                <h6 class="text-primary fw-semibold">IT & Electrical</h6>
+                <h5>Server Racks & Firewalls</h5>
+                <p class="text-muted small">Electrical Setup & Security Hardware</p>
+                <a href="infrastructure-products.html" class="btn btn-outline-primary mt-2">View Products</a>
               </div>
             </div>
       
-            <!-- CATEGORY: HVAC Services -->
+            <!-- HVAC Services -->
             <div class="col-lg-4 col-md-6">
-              <div class="product-card bg-white shadow-sm h-100">
-                <div class="position-relative product-image-container">
-                  <img src="img/hvac.png" class="product-image" alt="HVAC Services"/>
-                  <div class="image-overlay">
-                    <a href="img/hvac.png" data-lightbox="hvac" class="overlay-btn"><i class="fa fa-eye"></i></a>
-                    <a href="img/hvac1.png" class="d-none" data-lightbox="hvac"></a>
-                    <a href="img/hvac2.jpg" class="d-none" data-lightbox="hvac"></a>
-                    <a href="img/hvac3.png" class="d-none" data-lightbox="hvac"></a>
-                    <a href="img/hvac4.png" class="d-none" data-lightbox="hvac"></a>
-                  </div>
-                </div>
-                <div class="p-4 text-center">
-                  <h6 class="text-primary fw-semibold mb-1">HVAC Services</h6>
-                  <h5 class="mb-1">A/C Installations & Repairs</h5>
-                  <p class="text-muted small mb-0">Commercial & Residential Maintenance</p>
-                </div>
+              <div class="bg-white shadow-sm rounded overflow-hidden h-100 text-center p-4">
+                <img src="img/hvac.png" alt="HVAC Services" class="img-fluid mb-3" />
+                <h6 class="text-primary fw-semibold">HVAC Services</h6>
+                <h5>A/C Installations & Repairs</h5>
+                <p class="text-muted small">Commercial & Residential Maintenance</p>
+                <a href="hvac-products.html" class="btn btn-outline-primary mt-2">View Products</a>
               </div>
             </div>
       
           </div>
         </div>
       </section>
+      
     
     
     
@@ -591,7 +550,7 @@
                 </div>
                 
                 <!-- Form Side -->
-                <div class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                <div style="background-color: rgb(226, 58, 58);" class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
                     <div class="p-lg-5 pe-lg-0">
                         <h6 class="text-primary">Free Quote</h6>
                         <h1 class="mb-4">Get Your Custom Estimate Today</h1>
@@ -638,7 +597,7 @@
 
 
     <!-- Testimonial Start -->
-    <div class="container-xxl py-5">
+    <div style="background-color: white;" class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <h6 class="text-primary">Testimonials</h6>
@@ -697,72 +656,68 @@
     
     <!-- Testimonial End -->
 
-    <div class="container-xxl py-5 bg-light">
-        <div class="container text-center">
-          <h6 class="text-primary">Our Clients</h6>
-          <h2 class="mb-5">Brands That Trust Us</h2>
-      
-          <div class="row g-4 justify-content-center">
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-              <img src="img/client1.png" class="img-fluid grayscale" alt="Client 1">
-            </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-              <img src="img/client2.png" class="img-fluid grayscale" alt="Client 2">
-            </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-              <img src="img/client3.png" class="img-fluid grayscale" alt="Client 3">
-            </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-              <img src="img/client4.png" class="img-fluid grayscale" alt="Client 4">
-            </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-              <img src="img/client5.png" class="img-fluid grayscale" alt="Client 5">
-            </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-              <img src="img/client6.png" class="img-fluid grayscale" alt="Client 6">
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="container-xxl py-5 bg-danger">
+  <div class="container text-center">
+    <h6 class="text-white">Our Clients</h6>
+    <h2 class="mb-5 text-white">Brands That Trust Us</h2>
 
-      <div class="container-xxl py-5 bg-light">
-        <div class="container text-center">
-          <h6 class="text-primary">Our Partners</h6>
-          <h2 class="mb-5">Brands That Trust Us</h2>
-      
-          <div class="row g-4 justify-content-center">
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-              <img src="img/partner1.png" class="img-fluid grayscale" alt="Client 1">
-            </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-              <img src="img/partner2.png" class="img-fluid grayscale" alt="Client 2">
-            </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-              <img src="img/partner3.png" class="img-fluid grayscale" alt="Client 3">
-            </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-              <img src="img/partner4.png" class="img-fluid grayscale" alt="Client 4">
-            </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-              <img src="img/partner5.png" class="img-fluid grayscale" alt="Client 5">
-            </div>
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-              <img src="img/partner6.png" class="img-fluid grayscale" alt="Client 6">
-            </div>
-          </div>
+    <div class="scrolling-wrapper">
+      <div class="scrolling-logos">
+        <!-- Repeat logos to create seamless scroll -->
+        <img src="img/client1.png" alt="Client 1">
+        <img src="img/client2.png" alt="Client 2">
+        <img src="img/client3.png" alt="Client 3">
+        <img src="img/client4.png" alt="Client 4">
+        <img src="img/client5.png" alt="Client 5">
+        <img src="img/client6.png" alt="Client 6">
+        <!-- Duplicated for seamless looping -->
+        <img src="img/client1.png" alt="Client 1 Duplicate">
+        <img src="img/client2.png" alt="Client 2 Duplicate">
+        <img src="img/client3.png" alt="Client 3 Duplicate">
+        <img src="img/client4.png" alt="Client 4 Duplicate">
+        <img src="img/client5.png" alt="Client 5 Duplicate">
+        <img src="img/client6.png" alt="Client 6 Duplicate">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-xxl py-5 bg-danger">
+    <div class="container text-center">
+      <h6 class="text-primary">Our Partners</h6>
+      <h2 class="mb-5">Brands That Trust Us</h2>
+  
+      <div class="scrolling-wrapper">
+        <div class="scrolling-logos">
+          <!-- Original Logos -->
+          <img src="img/partner1.png" alt="Partner 1">
+          <img src="img/partner2.png" alt="Partner 2">
+          <img src="img/partner3.png" alt="Partner 3">
+          <img src="img/partner4.png" alt="Partner 4">
+          <img src="img/partner5.png" alt="Partner 5">
+          <img src="img/partner6.png" alt="Partner 6">
+          <!-- Duplicate for seamless looping -->
+          <img src="img/partner1.png" alt="Partner 1 Duplicate">
+          <img src="img/partner2.png" alt="Partner 2 Duplicate">
+          <img src="img/partner3.png" alt="Partner 3 Duplicate">
+          <img src="img/partner4.png" alt="Partner 4 Duplicate">
+          <img src="img/partner5.png" alt="Partner 5 Duplicate">
+          <img src="img/partner6.png" alt="Partner 6 Duplicate">
         </div>
       </div>
+    </div>
+  </div>
       
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid bg-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
                 <!-- Company Info -->
                 <div class="col-lg-4 col-md-6">
                     <img src="img/logo.jpeg" alt="Solartec Logo" style="height: 60px;">
-                    <h4 class="text-white mb-4">Smart Power Enterprise</h4>
+                    <h4 class="text-primary mb-4">Smart Power Enterprise</h4>
                     <p><i class="fa fa-map-marker-alt me-3"></i><strong>Address:</strong><br> Shiv Krupa, Bungalow No. 127,<br> Gorai Bridge, Next to ICICI ATM,<br> Borivali (West), Mumbai – 92,<br> Maharashtra, India</p>
                     <p><i class="fa fa-user me-3"></i><strong>Contact:</strong> Sandeep Maurya</p>
                     <p><i class="fa fa-phone-alt me-3"></i><strong>Phone:</strong> +91-8369702823</p>
@@ -777,22 +732,22 @@
     
                 <!-- Useful Links -->
                 <div class="col-lg-2 col-md-6">
-                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <h5 class="text-muted mb-4">Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li><a class="text-light" href="#"><i class="fa fa-angle-right me-2"></i>About Us</a></li>
-                        <li><a class="text-light" href="#"><i class="fa fa-angle-right me-2"></i>Contact Us</a></li>
-                        <li><a class="text-light" href="#"><i class="fa fa-angle-right me-2"></i>Our Services</a></li>
-                        <li><a class="text-light" href="#"><i class="fa fa-angle-right me-2"></i>Support</a></li>
-                        <li><a class="text-light" href="#"><i class="fa fa-angle-right me-2"></i>Terms & Conditions</a></li>
+                        <li><a class="text-muted" href="#"><i class="fa fa-angle-right me-2"></i>About Us</a></li>
+                        <li><a class="text-muted" href="#"><i class="fa fa-angle-right me-2"></i>Contact Us</a></li>
+                        <li><a class="text-muted" href="#"><i class="fa fa-angle-right me-2"></i>Our Services</a></li>
+                        <li><a class="text-muted" href="#"><i class="fa fa-angle-right me-2"></i>Support</a></li>
+                        <li><a class="text-muted" href="#"><i class="fa fa-angle-right me-2"></i>Terms & Conditions</a></li>
                     </ul>
                 </div>
     
                 <!-- Newsletter Signup -->
                 <div class="col-lg-4 col-md-12">
-                    <h5 class="text-white mb-4">Stay In The Loop</h5>
+                    <h5 class="text-muted mb-4">Stay In The Loop</h5>
                     <p>Join our mailing list to receive the latest insights on IT solutions, renewable energy tech, and security systems — straight to your inbox.</p>
                     <div class="position-relative" style="max-width: 400px;">
-                        <input class="form-control bg-transparent border-light text-light w-100 py-3 ps-4 pe-5" type="email" placeholder="Enter your email">
+                        <input class="form-control bg-light border-secondary text-primary w-100 py-3 ps-4 pe-5" type="email" placeholder="Enter your email">
                         <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Subscribe</button>
                     </div>
                 </div>
