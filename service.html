@@ -38,6 +38,8 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body style="background-color: gray;">
@@ -77,51 +79,78 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 shadow-sm">
         <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
             <img src="img/logo.jpeg" alt="Solartec Logo" style="height: 60px;">
         </a>
         
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
+        
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Service</a>
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="service.html" class="dropdown-item">Networking Services</a>
-                        <a href="service.html" class="dropdown-item">Hardware Support</a>
-                        <a href="service.html" class="dropdown-item">Data & Software Support</a>
-                        <a href="service.html" class="dropdown-item">Security Solutions</a>
-                        <a href="service.html" class="dropdown-item">Managed IT Services</a>
-                    </div>
-                </div>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" >Product</a>
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="PowerSolutions.html" class="dropdown-item">Power Solution</a>
-                        <a href="access-products.html" class="dropdown-item">Access product</a>
-                        <a href="infrastructure-products.html" class="dropdown-item">infrastructure product</a>
-                        <a href="security-products.html" class="dropdown-item">Security Product</a>
-                        <a href="hvac-products.html" class="dropdown-item">hvac products</a>
-                    </div>
-                </div>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="feature.html" class="dropdown-item">Feature</a>
-                        <a href="quote.html" class="dropdown-item">Free Quote</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                    </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
-            </div>
-            <a href="" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Get A Quote<i class="fa fa-arrow-right ms-3"></i></a>
+            <ul class="navbar-nav ms-auto p-4 p-lg-0">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+    
+                <!-- IT Services -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="itDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="window.location='service.html';">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="itDropdown">
+                        <li><a class="dropdown-item" href="Networking_Services.html">Networking Services</a></li>
+                        <li><a class="dropdown-item" href="Hardware_Support.html">Hardware Support</a></li>
+                        <li><a class="dropdown-item" href="Data_Software.html">Data & Software Support</a></li>
+                        <li><a class="dropdown-item" href="Security_Solutions.html">Security Solutions</a></li>
+                        <li><a class="dropdown-item" href="Managed_IT_Services.html">Managed IT Services</a></li>
+                    </ul>
+                </li>
+                
+    
+                <!-- Products -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="window.location='project.html';">
+                        Products
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                        <li><a class="dropdown-item" href="PowerSolutions.html">Power Solutions</a></li>
+                        <li><a class="dropdown-item" href="access-products.html">Access Products</a></li>
+                        <li><a class="dropdown-item" href="infrastructure-products.html">Infrastructure Products</a></li>
+                        <li><a class="dropdown-item" href="security-products.html">Security Products</a></li>
+                        <li><a class="dropdown-item" href="hvac-products.html">HVAC Products</a></li>
+                    </ul>
+                </li>
+                
+    
+                <!-- Company -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="companyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Company
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="companyDropdown">
+                        <li><a class="dropdown-item" href="feature.html">Features</a></li>
+                        <li><a class="dropdown-item" href="quote.html">Free Quote</a></li>
+                        <li><a class="dropdown-item" href="testimonial.html">Testimonials</a></li>
+                    </ul>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+    
+            <a href="quote.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">
+                Get A Quote <i class="fa fa-arrow-right ms-3"></i>
+            </a>
         </div>
     </nav>
+    
+    
     <!-- Navbar End -->
 
 
@@ -142,191 +171,172 @@
 
 
     <!-- Service Start -->
-    <div class="container-xxl py-5 services-section">
-        <div class="container">
-          <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-            <h6 class="text-primary">Our Services</h6>
-            <h1 class="mb-4">Empowering Businesses Through Smart Technology Solutions</h1>
-          </div>
-          <div class="row g-4">
-            <!-- Networking Services -->
-            <div class="col-md-6 col-lg-4" style="animation-delay: 0.1s;">
-              <div class="service-item p-3 h-100">
-                <img class="img-fluid w-100 rounded mb-3" src="img/img-600x400-1.jpg" alt="Networking Services">
-                <div class="p-2">
-                  <div class="service-icon mb-3">
-                    <i class="fa fa-network-wired fa-3x"></i>
-                  </div>
-                  <h4 class="mb-3">Networking Services</h4>
-                  <p>Robust, high-speed connectivity solutions tailored to your operations.</p>
-                  <ul>
-                    <li>Structured Cabling</li>
-                    <li>Switching & Routing</li>
-                    <li>Wireless Networks</li>
-                    <li>Electrical Infrastructure</li>
-                  </ul>
-                  <a class="small fw-medium text-primary" href="#">Read More <i class="fa fa-arrow-right ms-2"></i></a>
-                </div>
+    <!-- Services Section -->
+
+    <!-- Services Section -->
+<section class="py-5 bg-danger bg-opacity-10 services-section">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="text-center mx-auto mb-5" style="max-width: 700px;" data-aos="fade-down">
+        <h6 class="text-danger fw-semibold">Our Services</h6>
+        <h2 class="fw-bold display-6 text-danger">Empowering Businesses with Smart Technology</h2>
+        <p class="text-muted">We deliver powerful and practical IT solutions designed to elevate your operations and secure your infrastructure in a connected digital world.</p>
+      </div>
+  
+      <!-- Services Grid -->
+      <div class="row g-4">
+        <!-- Service Item -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="bg-white rounded-4 shadow-lg overflow-hidden h-100 service-card hover-rise">
+            <img src="img/img-600x400-1.jpg" class="img-fluid w-100" style="height: 220px; object-fit: cover;" alt="Networking">
+            <div class="p-4">
+              <div class="text-danger mb-3">
+                <i class="fa fa-network-wired fa-2x"></i>
               </div>
+              <h5 class="fw-semibold text-danger">Networking Services</h5>
+              <p class="text-muted small">Scalable and secure networking solutions to keep your systems reliably connected.</p>
+              <a href="Networking_Services.html" class="text-danger small fw-medium">Read More <i class="fa fa-arrow-right ms-1"></i></a>
             </div>
-      
-            <!-- Hardware Support -->
-            <div class="col-md-6 col-lg-4" style="animation-delay: 0.2s;">
-              <div class="service-item p-3 h-100">
-                <img class="img-fluid w-100 rounded mb-3" src="img/img-600x400-2.jpg" alt="Hardware Support">
-                <div class="p-2">
-                  <div class="service-icon mb-3">
-                    <i class="fa fa-tools fa-3x"></i>
-                  </div>
-                  <h4 class="mb-3">Hardware Support</h4>
-                  <p>Maintenance and repairs for all your IT equipment, big or small.</p>
-                  <ul>
-                    <li>Desktop/Laptop Support</li>
-                    <li>Server Rack Installations</li>
-                    <li>UPS, Stabilizer & Inverter</li>
-                    <li>Electronic Equipment Services</li>
-                  </ul>
-                  <a class="small fw-medium text-primary" href="#">Read More <i class="fa fa-arrow-right ms-2"></i></a>
-                </div>
-              </div>
-            </div>
-      
-            <!-- Data & Software Support -->
-            <div class="col-md-6 col-lg-4" style="animation-delay: 0.3s;">
-              <div class="service-item p-3 h-100">
-                <img class="img-fluid w-100 rounded mb-3" src="img/img-600x400-3.jpg" alt="Data & Software Support">
-                <div class="p-2">
-                  <div class="service-icon mb-3">
-                    <i class="fa fa-database fa-3x"></i>
-                  </div>
-                  <h4 class="mb-3">Data & Software Support</h4>
-                  <p>Ensure smooth operations with secure and optimized data systems.</p>
-                  <ul>
-                    <li>Data Recovery & Backup</li>
-                    <li>Software Installations</li>
-                    <li>System Upgrades</li>
-                    <li>Virus & Malware Removal</li>
-                  </ul>
-                  <a class="small fw-medium text-primary" href="#">Read More <i class="fa fa-arrow-right ms-2"></i></a>
-                </div>
-              </div>
-            </div>
-      
-            <!-- Security Solutions -->
-            <div class="col-md-6 col-lg-4" style="animation-delay: 0.4s;">
-              <div class="service-item p-3 h-100">
-                <img class="img-fluid w-100 rounded mb-3" src="img/img-600x400-5.jpg" alt="Security Solutions">
-                <div class="p-2">
-                  <div class="service-icon mb-3">
-                    <i class="fa fa-shield-alt fa-3x"></i>
-                  </div>
-                  <h4 class="mb-3">Security Solutions</h4>
-                  <p>Secure your digital and physical assets with integrated technologies.</p>
-                  <ul>
-                    <li>Firewalls & Antivirus</li>
-                    <li>CCTV & Surveillance</li>
-                    <li>Biometric Devices</li>
-                    <li>EM Lock & Door Access</li>
-                  </ul>
-                  <a class="small fw-medium text-primary" href="#">Read More <i class="fa fa-arrow-right ms-2"></i></a>
-                </div>
-              </div>
-            </div>
-      
-            <!-- Managed IT Services -->
-            <div class="col-md-6 col-lg-4" style="animation-delay: 0.5s;">
-              <div class="service-item p-3 h-100">
-                <img class="img-fluid w-100 rounded mb-3" src="img/img-600x400-4.jpg" alt="Managed IT Services">
-                <div class="p-2">
-                  <div class="service-icon mb-3">
-                    <i class="fa fa-cogs fa-3x"></i>
-                  </div>
-                  <h4 class="mb-3">Managed IT Services</h4>
-                  <p>End-to-end IT management designed for efficiency and scalability.</p>
-                  <ul>
-                    <li>Annual Maintenance Contracts</li>
-                    <li>Facility Management</li>
-                    <li>Managed Print Services</li>
-                    <li>Global Vendor Support</li>
-                  </ul>
-                  <a class="small fw-medium text-primary" href="#">Read More <i class="fa fa-arrow-right ms-2"></i></a>
-                </div>
-              </div>
-            </div>
-      
           </div>
         </div>
+  
+        <!-- Service Item -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="bg-white rounded-4 shadow-lg overflow-hidden h-100 service-card hover-rise">
+            <img src="img/img-600x400-2.jpg" class="img-fluid w-100" style="height: 220px; object-fit: cover;" alt="Hardware Support">
+            <div class="p-4">
+              <div class="text-danger mb-3">
+                <i class="fa fa-tools fa-2x"></i>
+              </div>
+              <h5 class="fw-semibold text-danger">Hardware Support</h5>
+              <p class="text-muted small">Expert-level diagnostics, repair, and support for your physical devices and systems.</p>
+              <a href="Hardware_Support.html" class="text-danger small fw-medium">Read More <i class="fa fa-arrow-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Service Item -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="bg-white rounded-4 shadow-lg overflow-hidden h-100 service-card hover-rise">
+            <img src="img/img-600x400-3.jpg" class="img-fluid w-100" style="height: 220px; object-fit: cover;" alt="Data & Software">
+            <div class="p-4">
+              <div class="text-danger mb-3">
+                <i class="fa fa-database fa-2x"></i>
+              </div>
+              <h5 class="fw-semibold text-danger">Data & Software</h5>
+              <p class="text-muted small">Solutions for cloud systems, data backups, and modern enterprise platforms.</p>
+              <a href="Data_Software.html" class="text-danger small fw-medium">Read More <i class="fa fa-arrow-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Service Item -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="bg-white rounded-4 shadow-lg overflow-hidden h-100 service-card hover-rise">
+            <img src="img/img-600x400-5.jpg" class="img-fluid w-100" style="height: 220px; object-fit: cover;" alt="Security">
+            <div class="p-4">
+              <div class="text-danger mb-3">
+                <i class="fa fa-shield-alt fa-2x"></i>
+              </div>
+              <h5 class="fw-semibold text-danger">Security Solutions</h5>
+              <p class="text-muted small">Smart surveillance and cyber protection tailored for every environment.</p>
+              <a href="Security_Solutions.html" class="text-danger small fw-medium">Read More <i class="fa fa-arrow-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Service Item -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+          <div class="bg-white rounded-4 shadow-lg overflow-hidden h-100 service-card hover-rise">
+            <img src="img/img-600x400-4.jpg" class="img-fluid w-100" style="height: 220px; object-fit: cover;" alt="Managed IT">
+            <div class="p-4">
+              <div class="text-danger mb-3">
+                <i class="fa fa-cogs fa-2x"></i>
+              </div>
+              <h5 class="fw-semibold text-danger">Managed IT Services</h5>
+              <p class="text-muted small">Fully managed solutions so you can focus on scaling your business worry-free.</p>
+              <a href="Managed_IT_Services.html" class="text-danger small fw-medium">Read More <i class="fa fa-arrow-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+  
       </div>
+    </div>
+  </section>
     
     
     <!-- Service End -->
 
 
     <!-- Feature Start -->
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
-        <div class="container feature px-lg-0">
-            <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="p-lg-5 ps-lg-0">
-                        <h6 class="text-primary">Why Choose SPE</h6>
-                        <h1 class="mb-4">Comprehensive IT, Networking & Security Solutions</h1>
-                        <p class="mb-4 pb-2">At Smart Power Enterprise, we go beyond products—we deliver end-to-end technology solutions that empower your business to thrive in a digital-first world. Whether it’s reliable hardware support, seamless data recovery, or cutting-edge security systems, we’ve got you covered.</p>
-                        <div class="row g-4">
-                            <div class="col-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="btn-lg-square bg-primary rounded-circle">
-                                        <i class="fa fa-check text-white"></i>
-                                    </div>
-                                    <div class="ms-4">
-                                        <p class="mb-0">Reliable</p>
-                                        <h5 class="mb-0">Service Quality</h5>
-                                    </div>
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row align-items-center gy-5">
+                <!-- Text Content -->
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="ps-lg-4">
+                        <h6 class="text-primary fw-semibold mb-2">Why Choose SPE</h6>
+                        <h2 class="display-6 fw-bold mb-4">Your Partner for IT, Networking & Security Excellence</h2>
+                        <p class="mb-4">At Smart Power Enterprise, we don’t just offer products—we engineer complete technology ecosystems tailored to your business needs. From smart surveillance to custom IT infrastructure and 24/7 support, we power your digital growth securely and efficiently.</p>
+                        
+                        <div class="row gy-4">
+                            <!-- Feature Item -->
+                            <div class="col-sm-6 d-flex">
+                                <div class="icon-box me-3 bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width:60px; height:60px;">
+                                    <i class="fa fa-check fs-4"></i>
+                                </div>
+                                <div>
+                                    <p class="text-muted mb-1">Reliable</p>
+                                    <h5 class="mb-0">Service Quality</h5>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="btn-lg-square bg-primary rounded-circle">
-                                        <i class="fa fa-user-cog text-white"></i>
-                                    </div>
-                                    <div class="ms-4">
-                                        <p class="mb-0">Certified</p>
-                                        <h5 class="mb-0">Technicians</h5>
-                                    </div>
+    
+                            <!-- Feature Item -->
+                            <div class="col-sm-6 d-flex">
+                                <div class="icon-box me-3 bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width:60px; height:60px;">
+                                    <i class="fa fa-user-cog fs-4"></i>
+                                </div>
+                                <div>
+                                    <p class="text-muted mb-1">Certified</p>
+                                    <h5 class="mb-0">Technicians</h5>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="btn-lg-square bg-primary rounded-circle">
-                                        <i class="fa fa-laptop-code text-white"></i>
-                                    </div>
-                                    <div class="ms-4">
-                                        <p class="mb-0">Custom</p>
-                                        <h5 class="mb-0">IT Solutions</h5>
-                                    </div>
+    
+                            <!-- Feature Item -->
+                            <div class="col-sm-6 d-flex">
+                                <div class="icon-box me-3 bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width:60px; height:60px;">
+                                    <i class="fa fa-laptop-code fs-4"></i>
+                                </div>
+                                <div>
+                                    <p class="text-muted mb-1">Tailored</p>
+                                    <h5 class="mb-0">IT Solutions</h5>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="btn-lg-square bg-primary rounded-circle">
-                                        <i class="fa fa-headset text-white"></i>
-                                    </div>
-                                    <div class="ms-4">
-                                        <p class="mb-0">24/7</p>
-                                        <h5 class="mb-0">Support Access</h5>
-                                    </div>
+    
+                            <!-- Feature Item -->
+                            <div class="col-sm-6 d-flex">
+                                <div class="icon-box me-3 bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width:60px; height:60px;">
+                                    <i class="fa fa-headset fs-4"></i>
+                                </div>
+                                <div>
+                                    <p class="text-muted mb-1">24/7</p>
+                                    <h5 class="mb-0">Support Access</h5>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="img/feature.jpg" style="object-fit: cover;" alt="">
+    
+                <!-- Image Content -->
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="position-relative overflow-hidden rounded-4 shadow">
+                        <img src="img/feature.jpg" class="img-fluid w-100" style="object-fit: cover; min-height: 400px;" alt="Feature Image">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    
     <!-- Feature End -->
 
 
@@ -451,6 +461,10 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

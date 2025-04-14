@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Smart Power Enterprise</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet"/>
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body style="background-color: gray;">
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light p-0">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>Devipada, Borivali East, Mumbai</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>+91-8369702823</small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center mx-n2">
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-square btn-link rounded-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 shadow-sm">
+        <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+            <img src="img/logo.jpeg" alt="Solartec Logo" style="height: 60px;">
+        </a>
+        
+        <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto p-4 p-lg-0">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+    
+                <!-- IT Services -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="itDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="window.location='service.html';">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="itDropdown">
+                        <li><a class="dropdown-item" href="Networking_Services.html">Networking Services</a></li>
+                        <li><a class="dropdown-item" href="Hardware_Support.html">Hardware Support</a></li>
+                        <li><a class="dropdown-item" href="Data_Software.html">Data & Software Support</a></li>
+                        <li><a class="dropdown-item" href="Security_Solutions.html">Security Solutions</a></li>
+                        <li><a class="dropdown-item" href="Managed_IT_Services.html">Managed IT Services</a></li>
+                    </ul>
+                </li>
+                
+    
+                <!-- Products -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="window.location='project.html';">
+                        Products
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                        <li><a class="dropdown-item" href="PowerSolutions.html">Power Solutions</a></li>
+                        <li><a class="dropdown-item" href="access-products.html">Access Products</a></li>
+                        <li><a class="dropdown-item" href="infrastructure-products.html">Infrastructure Products</a></li>
+                        <li><a class="dropdown-item" href="security-products.html">Security Products</a></li>
+                        <li><a class="dropdown-item" href="hvac-products.html">HVAC Products</a></li>
+                    </ul>
+                </li>
+                
+    
+                <!-- Company -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="companyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Company
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="companyDropdown">
+                        <li><a class="dropdown-item" href="feature.html">Features</a></li>
+                        <li><a class="dropdown-item" href="quote.html">Free Quote</a></li>
+                        <li><a class="dropdown-item" href="testimonial.html">Testimonials</a></li>
+                    </ul>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+    
+            <a href="quote.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">
+                Get A Quote <i class="fa fa-arrow-right ms-3"></i>
+            </a>
+        </div>
+    </nav>
+    
+    
+    <!-- Navbar End -->
+
+
+
+
+    <!-- Page Header -->
+<div class="container-fluid py-5 bg-primary text-white text-center wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+      <h1 class="display-4 mb-3">Managed IT Services</h1>
+      <p class="lead">Reliable, cost-effective solutions tailored to your business needs</p>
+    </div>
+  </div>
+  
+  <!-- Description Section -->
+  <section class="py-5 bg-light wow fadeInUp" data-wow-delay="0.2s">
+    <div class="container">
+      <div class="row align-items-center g-5">
+  
+        <!-- Left Column Text -->
+        <div class="col-lg-6">
+          <h2 class="mb-4">Streamlined IT Operations for Future-Ready Businesses</h2>
+          <p>
+            In today’s digital era, robust and reliable IT infrastructure is crucial to maintain seamless business operations. At Smart Power Enterprise, we offer comprehensive Managed Services that help you focus on what matters most—growing your business.
+          </p>
+          <p>
+            Our customizable service plans are designed to reduce operational costs, enhance system performance, and protect your technology investments. Whether you're a startup or an enterprise, our scalable support adapts to your evolving business demands.
+          </p>
+          <a href="#" class="btn btn-primary px-4 py-2 mt-3">Talk to an Expert</a>
+        </div>
+  
+        <!-- Right Column Image -->
+        <div class="col-lg-6 text-center wow zoomIn" data-wow-delay="0.4s">
+          <img src="img/managed-services.jpg" alt="Managed Services" class="img-fluid rounded shadow">
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  <!-- Services Grid -->
+  <section class="py-5 bg-white wow fadeInUp" data-wow-delay="0.3s">
+    <div class="container">
+      <h3 class="text-center mb-5">Our Managed Service Offerings</h3>
+      <div class="row g-4 text-center">
+  
+        <div class="col-md-6 col-lg-3">
+          <div class="p-4 border rounded h-100 shadow-sm">
+            <i class="bi bi-gear-wide-connected fs-2 text-primary mb-3"></i>
+            <h5>Annual Maintenance Contracts</h5>
+            <p>Comprehensive support for all your IT assets with scheduled upkeep and emergency care.</p>
+          </div>
+        </div>
+  
+        <div class="col-md-6 col-lg-3">
+          <div class="p-4 border rounded h-100 shadow-sm">
+            <i class="bi bi-building fs-2 text-primary mb-3"></i>
+            <h5>Facility Management</h5>
+            <p>On-site IT professionals and remote monitoring for smooth facility operations.</p>
+          </div>
+        </div>
+  
+        <div class="col-md-6 col-lg-3">
+          <div class="p-4 border rounded h-100 shadow-sm">
+            <i class="bi bi-printer fs-2 text-primary mb-3"></i>
+            <h5>Managed Print Services (MPS)</h5>
+            <p>Optimize your print environment, reduce waste, and manage printing expenses effectively.</p>
+          </div>
+        </div>
+  
+        <div class="col-md-6 col-lg-3">
+          <div class="p-4 border rounded h-100 shadow-sm">
+            <i class="bi bi-globe fs-2 text-primary mb-3"></i>
+            <h5>Multi-Vendor Global Support</h5>
+            <p>End-to-end support for hardware and software across different vendors and platforms worldwide.</p>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+    
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <!-- Company Info -->
+                <div class="col-lg-4 col-md-6">
+                    <img src="img/logo.jpeg" alt="Solartec Logo" style="height: 60px;">
+                    <h4 class="text-primary mb-4">Smart Power Enterprise</h4>
+                    <p><i class="fa fa-map-marker-alt me-3"></i><strong>Address:</strong><br> Shiv Krupa, Bungalow No. 127,<br> Gorai Bridge, Next to ICICI ATM,<br> Borivali (West), Mumbai – 92,<br> Maharashtra, India</p>
+                    <p><i class="fa fa-user me-3"></i><strong>Contact:</strong> Sandeep Maurya</p>
+                    <p><i class="fa fa-phone-alt me-3"></i><strong>Phone:</strong> +91-8369702823</p>
+                    <p><i class="fa fa-envelope me-3"></i><strong>Email:</strong> info@smartpowerenterprise.in</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-outline-light btn-social me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social me-2" href="#"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social me-2" href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+    
+                <!-- Useful Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-muted mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="text-muted" href="#"><i class="fa fa-angle-right me-2"></i>About Us</a></li>
+                        <li><a class="text-muted" href="#"><i class="fa fa-angle-right me-2"></i>Contact Us</a></li>
+                        <li><a class="text-muted" href="#"><i class="fa fa-angle-right me-2"></i>Our Services</a></li>
+                        <li><a class="text-muted" href="#"><i class="fa fa-angle-right me-2"></i>Support</a></li>
+                        <li><a class="text-muted" href="#"><i class="fa fa-angle-right me-2"></i>Terms & Conditions</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Newsletter Signup -->
+                <div class="col-lg-4 col-md-12">
+                    <h5 class="text-muted mb-4">Stay In The Loop</h5>
+                    <p>Join our mailing list to receive the latest insights on IT solutions, renewable energy tech, and security systems — straight to your inbox.</p>
+                    <div class="position-relative" style="max-width: 400px;">
+                        <input class="form-control bg-light border-secondary text-primary w-100 py-3 ps-4 pe-5" type="email" placeholder="Enter your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

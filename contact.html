@@ -38,6 +38,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
 
 <body style="background-color: gray;">
@@ -77,51 +78,78 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 shadow-sm">
         <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
             <img src="img/logo.jpeg" alt="Solartec Logo" style="height: 60px;">
         </a>
         
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
+        
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Service</a>
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="service.html" class="dropdown-item">Networking Services</a>
-                        <a href="service.html" class="dropdown-item">Hardware Support</a>
-                        <a href="service.html" class="dropdown-item">Data & Software Support</a>
-                        <a href="service.html" class="dropdown-item">Security Solutions</a>
-                        <a href="service.html" class="dropdown-item">Managed IT Services</a>
-                    </div>
-                </div>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" >Product</a>
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="PowerSolutions.html" class="dropdown-item">Power Solution</a>
-                        <a href="access-products.html" class="dropdown-item">Access product</a>
-                        <a href="infrastructure-products.html" class="dropdown-item">infrastructure product</a>
-                        <a href="security-products.html" class="dropdown-item">Security Product</a>
-                        <a href="hvac-products.html" class="dropdown-item">hvac products</a>
-                    </div>
-                </div>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="feature.html" class="dropdown-item">Feature</a>
-                        <a href="quote.html" class="dropdown-item">Free Quote</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                    </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
-            </div>
-            <a href="" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Get A Quote<i class="fa fa-arrow-right ms-3"></i></a>
+            <ul class="navbar-nav ms-auto p-4 p-lg-0">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+    
+                <!-- IT Services -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="itDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="window.location='service.html';">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="itDropdown">
+                        <li><a class="dropdown-item" href="Networking_Services.html">Networking Services</a></li>
+                        <li><a class="dropdown-item" href="Hardware_Support.html">Hardware Support</a></li>
+                        <li><a class="dropdown-item" href="Data_Software.html">Data & Software Support</a></li>
+                        <li><a class="dropdown-item" href="Security_Solutions.html">Security Solutions</a></li>
+                        <li><a class="dropdown-item" href="Managed_IT_Services.html">Managed IT Services</a></li>
+                    </ul>
+                </li>
+                
+    
+                <!-- Products -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="window.location='project.html';">
+                        Products
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                        <li><a class="dropdown-item" href="PowerSolutions.html">Power Solutions</a></li>
+                        <li><a class="dropdown-item" href="access-products.html">Access Products</a></li>
+                        <li><a class="dropdown-item" href="infrastructure-products.html">Infrastructure Products</a></li>
+                        <li><a class="dropdown-item" href="security-products.html">Security Products</a></li>
+                        <li><a class="dropdown-item" href="hvac-products.html">HVAC Products</a></li>
+                    </ul>
+                </li>
+                
+    
+                <!-- Company -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="companyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Company
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="companyDropdown">
+                        <li><a class="dropdown-item" href="feature.html">Features</a></li>
+                        <li><a class="dropdown-item" href="quote.html">Free Quote</a></li>
+                        <li><a class="dropdown-item" href="testimonial.html">Testimonials</a></li>
+                    </ul>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+    
+            <a href="quote.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">
+                Get A Quote <i class="fa fa-arrow-right ms-3"></i>
+            </a>
         </div>
     </nav>
+    
+    
     <!-- Navbar End -->
 
 
@@ -227,13 +255,6 @@
 
 <!-- Contact Page End -->
 
-<!-- Optional Google Map -->
-<div class="container-fluid px-0 wow fadeIn" data-wow-delay="0.1s">
-    <iframe class="w-100" height="400" style="border:0;"
-        src="https://www.google.com/maps/embed?pb=!1m18...YourMapEmbedLinkHere..."
-        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-</div>
 
 
 
